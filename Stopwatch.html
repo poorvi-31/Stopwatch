@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Stopwach.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Stopwatch</h1>
+    <div class="container">
+        <div class="num">
+            <h2 id="hr" class="time">00</h2>
+            <h2>:</h2>
+            <h2 id="min" class="time">00</h2>
+            <h2>:</h2>
+            <h2 id="sec" class="time">00</h2>
+            <h2>:</h2>
+            <h2 id="mil" class="time">00</h2>
+        </div>
+        <div class="btn">
+            <button onclick="start()">Start</button>
+            <button onclick="stop()">Stop</button>
+            <button onclick="reset()">Reset</button>
+        </div>
+    </div>
+
+    <script>
+        let mil = 0;
+        let sec = 0;
+        let min = 0;
+        let hr = 0;
+
+        let time = false;
+
+        function start()
+        {
+            time = true;
+            timer();
+        }
+        function stop()
+        {
+            time = false;
+            timer();
+        }
+        function reset()
+        {
+            location.reload();
+        }
+
+        function timer()
+        {
+            if(time == true)
+            {
+                mil = mil+1;
+                if(mil == 100)
+                {
+                    sec = sec + 1;
+                    mil = 0;
+                }
+                if(sec == 60)
+                {
+                    min = min + 1;
+                    sec = 0;
+                }
+                if(min == 60)
+                {
+                    hr = hr + 1;
+                    min = 0;
+                }
+                setTimeout("timer()",10);
+                document.getElementById("mil").innerHTML = mil;
+                document.getElementById("sec").innerHTML = sec;
+                document.getElementById("min").innerHTML = min;
+                document.getElementById("hr").innerHTML = hr;
+            }
+        }
+    </script>
+</body>
+</html>

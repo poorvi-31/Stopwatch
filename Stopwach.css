@@ -1,0 +1,177 @@
+body
+{
+    font-family: 'Lato',sans-serif;
+    background-color: black;
+}
+.container
+{
+    text-align: center;
+    margin-left: 29.5%;
+    width: 450px;
+    border: 2px solid white;
+    margin-top: 3%;
+    padding: 22px;
+}
+h1
+{
+    color: white;
+    text-align: center;
+    font-size: 38px;
+    margin-left: -50px;
+    background-color: #0F7686;
+}
+.num
+{
+    color: white;
+    display: flex;
+    margin-left: 12%;
+}
+h2
+{
+    font-size: 60px;
+   
+}
+.time
+{
+    border: 1px solid white;
+    height: 70px;
+    width: 70px;
+}
+button
+{
+    width: 100px;
+    height: 35px;
+    background-color: #0F7686;
+    color: white;
+    font-size: 24px;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    margin-inline: 8px;
+    cursor: pointer;
+}
+button:hover
+{
+    border: 2px solid white;
+}
+
+@media only screen and (max-width:360px) {
+    body
+{
+    font-family: 'Lato',sans-serif;
+    background-color: black;
+}
+.container
+{
+    margin-left: 2.5%;
+    width: 330px;
+    padding: 0px;
+    height: 312px;
+    border-radius: 50%;
+}
+h1
+{
+    margin-left: 8px;
+}
+.num
+{
+    color: white;
+    display: flex;
+    margin-left: 2%;
+    margin-top: 71px;
+}
+h2
+{
+    font-size: 60px;
+   
+}
+.time
+{
+    border: 1px solid black;
+    height: 66px;
+    width: 63px;
+}
+button
+{
+        width: 100px;
+    height: 63px;
+    background-color: #0F7686;
+    color: white;
+    font-size: 24px;
+    border: none;
+    outline: none;
+    border-radius: 25%;
+    /* margin-inline: 31px; */
+    margin: auto;
+    cursor: pointer;
+}
+button:hover
+{
+    border: 2px solid white;
+}
+.btn
+{
+    margin-top: 19vh;
+}
+}
+@media only screen and (max-width:450px) 
+{
+
+    body
+    {
+        font-family: 'Lato',sans-serif;
+        background-color: black;
+    }
+    .container
+    {
+        margin-left: 8.5%;
+        width: 330px;
+        padding: 0px;
+        height: 312px;
+        border-radius: 50%;
+    }
+    h1
+    {
+        margin-left: 8px;
+    }
+    .num
+    {
+        color: white;
+        display: flex;
+        margin-left: 2%;
+        margin-top: 71px;
+    }
+    h2
+    {
+        font-size: 60px;
+       
+    }
+    .time
+    {
+        border: 1px solid black;
+        height: 66px;
+        width: 63px;
+    }
+    button
+    {
+            width: 100px;
+        height: 63px;
+        background-color: #0F7686;
+        color: white;
+        font-size: 24px;
+        border: none;
+        outline: none;
+        border-radius: 25%;
+        /* margin-inline: 31px; */
+        margin: auto;
+        cursor: pointer;
+    }
+    button:hover
+    {
+        border: 2px solid white;
+    }
+    .btn
+    {
+        margin-top: 19vh;
+    }
+}
